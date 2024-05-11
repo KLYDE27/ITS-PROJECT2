@@ -1,0 +1,171 @@
+/*navbar start*/
+*{
+    margin:0;
+    padding:0;
+    font-family: poppins;
+    box-sizing: border-box;
+}
+.banner{ 
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url(img/background.png);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.dropdown li{
+    display: block;
+}
+.dropdown{
+    width: 100%;
+    background: #13b118;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+/* Contact Details */
+.content{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:#fff;
+}
+.content h1{
+    font-size: 70px;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.column {
+    float: left;
+    width: 33%;
+    padding: 10px;
+    height: 300px;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h2.ex1 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 59px;
+    text-align: center;
+}
+
+h2.ex2 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 39px;
+    text-align: left;
+    margin-left: 180px;
+}
+
+h2.ex3 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    text-align: left;
+    margin-left: 100px;
+}
+
+.ex1 {
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    margin-right: 550px;
+    margin-left: 150px;
+    background-color: #dbdcda;
+    line-height: 1.8;
+}
+
+.ex2 {
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.8;
+    margin-left: 100px;
+}
+
+.ex3 {   
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.8;
+    margin-left: 100px;
+    text-indent: 10px;
+}
+
+
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #13b118;
+    position: absolute;
+    left: 0;
+    bottom: -10;
+    transition: 1s;
+}
+.navbar ul li:hover:after{
+
+    width: 100%;
+    display: block;
+    z-index: 999;
+
+
+}
+footer {
+    background-color: #333; /* Background color of the footer */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding around the content inside the footer */
+    text-align: center; /* Center-align the text */
+    position: fixed; /* Fix the footer to the bottom of the viewport */
+    width: 100%; /* Make the footer span the entire width of the viewport */
+    bottom: 0; /* Position the footer at the bottom of the viewport */
+  }
+  
+  /* Additional styling for links inside the footer */
+  footer a {
+    color: #fff; /* Text color for links */
+    text-decoration: none; /* Remove underline from links */
+  }
+  footer a:hover {
+    text-decoration: underline; /* Underline links on hover */
+  }
+  
+/*navbar end*/

@@ -1,0 +1,162 @@
+/*navbar start*/
+/*navbar start*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    box-sizing: border-box;
+}
+
+.banner {
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(img/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 200px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.dropdown li {
+    display: block;
+}
+
+.dropdown {
+    width: 100%;
+    background: #13b118;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #13b118;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 1s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+    display: block;
+    z-index: 999;
+}
+
+/* Form styles */
+.form-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #13b118;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Indicate submission */
+.submitted {
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Image map */
+.image-map {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.image-map img {
+    max-width: 100%;
+    height: auto;
+}
+/* Indicate successful submission */
+.success-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Invalid indicator */
+.invalid {
+    color: red;
+    font-weight: bold;
+    margin-top: 5px;
+}
+footer {
+    background-color: #333; /* Background color of the footer */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding around the content inside the footer */
+    text-align: center; /* Center-align the text */
+    position: fixed; /* Fix the footer to the bottom of the viewport */
+    width: 100%; /* Make the footer span the entire width of the viewport */
+    bottom: 0; /* Position the footer at the bottom of the viewport */
+  }
+  
+  /* Additional styling for links inside the footer */
+  footer a {
+    color: #fff; /* Text color for links */
+    text-decoration: none; /* Remove underline from links */
+  }
+  footer a:hover {
+    text-decoration: underline; /* Underline links on hover */
+  }
+  
+
+/*navbar end*/

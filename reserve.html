@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Form</title>
+    <link rel="stylesheet" href="reserve.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="banner">
+        <!--navbar start-->        
+        <div class="navbar">
+          <a href="index.html">  <img src="img/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="Entree' Menu.html">Entree' Menu</a></li>
+                <li><a href="Dessert Menu.html">Dessert Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html"> Contact Us</a> </li>   
+                <br>
+                <br>
+                <br>
+                <li><a href="thankyou.html">Additional Comments for Reservation</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="reservation-container">
+        <h2>Reservation Form</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <label for="guests">Number of Guests:</label>
+                <select id="guests" name="guests" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="seating">Preferred Seating:</label>
+                <select id="seating" name="seating" required>
+                    <option value="indoor">Indoor</option>
+                    <option value="outdoor">Outdoor</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <button type="submit">Submit Reservation</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </form>
+    </div>
+    <div class="success-message">
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const form = document.querySelector('form');
+                const successMessage = document.querySelector('.success-message');
+        
+                form.addEventListener('submit', function (event) {
+                    event.preventDefault(); // Prevent the form from submitting normally
+        
+                    // Your form submission logic here
+                    // For demonstration purposes, let's just show the success message
+                    successMessage.textContent = 'Reservation submitted successfully!';
+                    successMessage.classList.add('show');
+        
+                    // Clear form fields if needed
+                    form.reset();
+                });
+            });
+        </script>   
+
+
+    </div>
+
+</body>
+
+<footer> 
+            
+    | Developers | Klyde Gabriel Santos  |    JB Bagorio  |    Jose Mari Mendoza  |    Miekkell Demain   |
+
+ </footer>
+
+
+</html>

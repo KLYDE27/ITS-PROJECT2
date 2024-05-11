@@ -1,0 +1,94 @@
+<html>
+<head>
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="banner">
+            <!--navbar start-->
+            <div class="navbar">
+              <a href="index.html">  <img src="img/logo.png" class="logo"></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="Entree' Menu.html">Entree' Menu</a></li>
+                    <li><a href="Dessert Menu.html">Dessert Menu</a></li>
+                    <li><a href="contact.html"> Contact Us</a> </li>    
+                    <li><a href="reserve.html">Reservation Form</a></li>
+                    <br>
+                    <br>
+                    <br>
+                    <li><a href="thankyou.html">Additional Comments for Reservation</a></li>
+                </ul>
+            </div>
+            <section id="testimonials">
+                <div class="test-heading">
+                    <h1> GALLERIA </h1>
+                </div>
+                <!--navbar end-->
+                <div class="gallery">
+                    <img src="img/1st.jpg" alt="Maria G's" onclick="openModal('img/1st.jpg')"> 
+                    <img src="img/2nd .jpg" alt="Italian Food" onclick="openModal('img/2nd .jpg')">
+                    <img src="img/3rd.jpg" alt="Maria G's" onclick="openModal('img/3rd.jpg')">
+                    <img src="img/4th .jpg" alt="Maria G's" onclick="openModal('img/4th .jpg')">
+                    <img src="img/5th.jpg" alt="Italian Food" onclick="openModal('img/5th.jpg')">
+                    <img src="img/6th.jpg" alt="Maria G's" onclick="openModal('img/6th.jpg')">
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                
+                <div> 
+                    <!-- Image Map -->
+                        <img src="img/Pasta.png" usemap="#image-map">
+
+                        <map name="image-map">
+                            <area target="" alt="Rotini" title="Rotini" href="https://sharethepasta.org/pasta-shapes/rotini/" coords="203,168,51,24" shape="rect">
+                            <area target="" alt="Orecchiette" title="Orecchiette" href="https://sharethepasta.org/pasta-shapes/orecchiette/" coords="289,22,422,149,426,159,489,21,636,172" shape="rect">
+                            <area target="" alt="Rigatoni " title="Rigatoni " href="https://sharethepasta.org/pasta-shapes/rigatoni/" coords="478,27,643,177" shape="rect">
+                            <area target="" alt="Spaghetti " title="Spaghetti " href="https://sharethepasta.org/pasta-shapes/spaghetti/" coords="694,18,837,291" shape="rect">
+                            <area target="" alt="Vegetable Rotini " title="Vegetable Rotini " href="https://www.barillafoodservicerecipes.com/product/veggie-rotini-zucchini-spinach/#:~:text=Barilla%20Veggie%20Rotini%20is%20made,daily%20recommended%20amount%20of%20vegetables." coords="44,233,206,382" shape="rect">
+                            <area target="" alt="Fartalle" title="Fartalle" href="https://sharethepasta.org/pasta-shapes/farfalle/#:~:text=The%20word%20farfalle%20means%20butterflies,to%20form%20the%20unique%20shape." coords="276,210,428,406" shape="rect">
+                            <area target="" alt="Ravioli" title="Ravioli" href="https://sharethepasta.org/pasta-shapes/ravioli/#:~:text=Raviolis%20are%20square%20or%20round,top%20to%20form%20a%20pillow." coords="497,221,617,348" shape="rect">
+                            <area target="" alt="Macaroni" title="Macaroni" href="https://sharethepasta.org/pasta-shapes/elbow-macaroni/" coords="707,345,844,427" shape="rect">
+                            <area target="" alt="Fettuccini" title="Fettuccini" href="https://sharethepasta.org/pasta-shapes/fettuccine/" coords="94,450,385,596" shape="rect">
+                            <area target="" alt="Lasagne" title="Lasagne" href="https://sharethepasta.org/pasta-shapes/lasagna/" coords="407,458,667,596" shape="rect">
+                            <area target="" alt="Penne" title="Penne" href="https://sharethepasta.org/pasta-shapes/penne-rigate/" coords="716,487,839,579" shape="rect">
+                        </map>
+ 
+
+                </div>
+                <div id="myModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                </div>
+                
+                <script>
+                    function openModal(imageSrc) {
+                        var modal = document.getElementById('myModal');
+                        var modalImg = document.getElementById("modalImage");
+                        modal.style.display = "block";
+                        modalImg.src = imageSrc;
+                    }
+                
+                    function closeModal() {
+                        var modal = document.getElementById('myModal');
+                        modal.style.display = "none";
+                    }
+                </script>
+        </div>
+        
+
+    
+    
+</body>
+
+
+<footer> 
+            
+    | Developers | Klyde Gabriel Santos  |    JB Bagorio  |    Jose Mari Mendoza  |    Miekkell Demain   |
+
+ </footer>
+ 
+</html>

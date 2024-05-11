@@ -1,0 +1,125 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #13b118;
+}
+
+/* Thank You Page Styles */
+.thankyou-page {
+    text-align: center;
+}
+
+.thankyou-page h1 {
+    color: #13b118;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.thankyou-page p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Comment Form Styles */
+#comment-form {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#comment-form input,
+#comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#comment-form textarea {
+    resize: vertical;
+}
+
+#comment-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #13b118;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#comment-form button:hover {
+    background-color: #0e8a10;
+}
+
+/* Comments Container Styles */
+#comments-container {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.comment {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.comment p {
+    margin: 0;
+}
+
+/* Other Pages Styles */
+.other-pages {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.other-pages p {
+    margin-bottom: 10px;
+}
+
+.other-pages ul {
+    list-style: none;
+    padding: 0;
+}
+
+.other-pages li {
+    display: inline-block;
+    margin-right: 10px;
+}
+footer {
+    background-color: #333; /* Background color of the footer */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding around the content inside the footer */
+    text-align: center; /* Center-align the text */
+    position: fixed; /* Fix the footer to the bottom of the viewport */
+    width: 100%; /* Make the footer span the entire width of the viewport */
+    bottom: 0; /* Position the footer at the bottom of the viewport */
+  }
+  
+  /* Additional styling for links inside the footer */
+  footer a {
+    color: #fff; /* Text color for links */
+    text-decoration: none; /* Remove underline from links */
+  }
+  footer a:hover {
+    text-decoration: underline; /* Underline links on hover */
+  }
+  
+
